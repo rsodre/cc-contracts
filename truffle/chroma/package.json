@@ -1,0 +1,25 @@
+{
+	"name": "cc-chroma",
+	"version": "1.0.0",
+	"description": "collect-code CHROMA Contracts",
+	"author": "Studio Avante",
+	"homepage": "https://www.collect-code.com/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://rsodre@github.com/rsodre/cc-chroma.git"
+	},
+	"keywords": [],
+	"dependencies": {
+		"@openzeppelin/contracts": "^3.4.0",
+		"@openzeppelin/test-helpers": "^0.5.10",
+		"@openzeppelin/truffle-upgrades": "^1.5.0",
+		"@truffle/contract": "^4.3.8",
+		"@truffle/hdwallet-provider": "^1.2.3",
+		"dotenv": "^8.2.0",
+		"ganache-core": "^2.13.2"
+	},
+	"devDependencies": {
+		"truffle-contract-size": "^2.0.1",
+		"truffle-plugin-verify": "^0.5.7"
+	}
+}

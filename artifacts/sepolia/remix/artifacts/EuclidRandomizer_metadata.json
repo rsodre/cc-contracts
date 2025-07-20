@@ -1,0 +1,299 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "self",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint32",
+						"name": "maxExclusive",
+						"type": "uint32"
+					}
+				],
+				"name": "getInt",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "self",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint32",
+						"name": "minInclusive",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "maxExclusive",
+						"type": "uint32"
+					}
+				],
+				"name": "getIntRange",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "self",
+						"type": "tuple"
+					}
+				],
+				"name": "getNextValue",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint128",
+						"name": "seed",
+						"type": "uint128"
+					}
+				],
+				"name": "initialize",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes16",
+						"name": "seed",
+						"type": "bytes16"
+					}
+				],
+				"name": "initialize",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32[4]",
+								"name": "state",
+								"type": "uint32[4]"
+							},
+							{
+								"internalType": "uint32",
+								"name": "value",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct IEuclidRandomizer.RandomizerState",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "senderAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "makeSeed",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EuclidRandomizer.sol": "EuclidRandomizer"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EuclidRandomizer.sol": {
+			"keccak256": "0xb705778a07672f3fa0e758b0763677a7617e5ba159ab026a8dc7dce034e66b82",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b65388f3be0d6f056ca4fcda9321f4fac6e39ba31bca201009c00bca4bcf8fa8",
+				"dweb:/ipfs/QmegwDrkKJenV4D5MF9LQcQzXhpcvR7h5WDq5tJyWxSQQz"
+			]
+		},
+		"contracts/IEuclidRandomizer.sol": {
+			"keccak256": "0x03aebf7877016b2a4084c2f85e621ee16814b4ac6990a7ce0fd3f71e7d762ef1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6ddff86b70e3e09f1ca15ce5c3318941022ee8dec32d2af3d466789d395bb1ff",
+				"dweb:/ipfs/QmPTmgp2cCXPfueE8LTLDs31tTXyY51fZfP1Veji8grWAa"
+			]
+		}
+	},
+	"version": 1
+}

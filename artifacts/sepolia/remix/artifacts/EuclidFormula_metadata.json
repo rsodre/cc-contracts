@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "randomizer_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint128",
+						"name": "hash",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "generateFormula",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "supplyDataFromTokenId",
+				"outputs": [
+					{
+						"internalType": "uint8[6]",
+						"name": "",
+						"type": "uint8[6]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EuclidFormula.sol": "EuclidFormula"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Strings.sol": {
+			"keccak256": "0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30",
+				"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2"
+			]
+		},
+		"contracts/EuclidFormula.sol": {
+			"keccak256": "0x216efce0437681c6f76006bcb3be330edc4add88154dc9e8da1993a72e0a8aac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c27b474b3e95a6e8cefc42e02b94cba6dd8008173a6c4311bd222ed882c773e0",
+				"dweb:/ipfs/QmcTTmYGLUv397HouvcZxpTimjDzFwuscJFws2F58j1BHG"
+			]
+		},
+		"contracts/IEuclidFormula.sol": {
+			"keccak256": "0x2dc67037a0bf40db490d52351d0a0a81a352cdb6191d7ad7aa2613770ed9268d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1a37b7512bdcc4342a33b5595db9e078c7c0f72e26aad19bbc9115ee58ada18a",
+				"dweb:/ipfs/QmQu6oyPdnzrvtNm46DLzLtEEr9RqAxFPvTxzX3pgLm2m4"
+			]
+		},
+		"contracts/IEuclidRandomizer.sol": {
+			"keccak256": "0x03aebf7877016b2a4084c2f85e621ee16814b4ac6990a7ce0fd3f71e7d762ef1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6ddff86b70e3e09f1ca15ce5c3318941022ee8dec32d2af3d466789d395bb1ff",
+				"dweb:/ipfs/QmPTmgp2cCXPfueE8LTLDs31tTXyY51fZfP1Veji8grWAa"
+			]
+		}
+	},
+	"version": 1
+}

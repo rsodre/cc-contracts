@@ -1,0 +1,241 @@
+{
+  "contractName": "IEuclidFormula",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "hash",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "generateFormula",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint128\",\"name\":\"hash\",\"type\":\"uint128\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"generateFormula\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IEuclidFormula.sol\":\"IEuclidFormula\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30\",\"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2\"]},\"project:/contracts/IEuclidFormula.sol\":{\"keccak256\":\"0x2dc67037a0bf40db490d52351d0a0a81a352cdb6191d7ad7aa2613770ed9268d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1a37b7512bdcc4342a33b5595db9e078c7c0f72e26aad19bbc9115ee58ada18a\",\"dweb:/ipfs/QmQu6oyPdnzrvtNm46DLzLtEEr9RqAxFPvTxzX3pgLm2m4\"]},\"project:/contracts/IEuclidRandomizer.sol\":{\"keccak256\":\"0x03aebf7877016b2a4084c2f85e621ee16814b4ac6990a7ce0fd3f71e7d762ef1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ddff86b70e3e09f1ca15ce5c3318941022ee8dec32d2af3d466789d395bb1ff\",\"dweb:/ipfs/QmPTmgp2cCXPfueE8LTLDs31tTXyY51fZfP1Veji8grWAa\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n//\n//  ********  **     **    ******   **        **  *******  \n// /**/////  /**    /**   **////** /**       /** /**////** \n// /**       /**    /**  **    //  /**       /** /**    /**\n// /*******  /**    /** /**        /**       /** /**    /**\n// /**////   /**    /** /**        /**       /** /**    /**\n// /**       /**    /** //**    ** /**       /** /**    ** \n// /******** //*******   //******  /******** /** /*******  \n// ////////   ///////     //////   ////////  //  ///////   \n//\n// by collect-code 2022\n// https://collect-code.com/\n//\npragma solidity ^0.8.2;\nimport \"@openzeppelin/contracts/utils/Strings.sol\";\nimport \"./IEuclidRandomizer.sol\";\n\ninterface IEuclidFormula {\n\tfunction generateFormula(uint128 hash, uint256 tokenId) external view returns (string memory);\n}\n",
+  "sourcePath": "/Users/roger/Dev/Blockchain/Truffle/cc-euclid/contracts/IEuclidFormula.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IEuclidFormula.sol",
+    "exportedSymbols": {
+      "IEuclidFormula": [
+        5170
+      ],
+      "IEuclidRandomizer": [
+        5242
+      ],
+      "Strings": [
+        1987
+      ]
+    },
+    "id": 5171,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5158,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "574:23:19"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/utils/Strings.sol",
+        "file": "@openzeppelin/contracts/utils/Strings.sol",
+        "id": 5159,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 5171,
+        "sourceUnit": 1988,
+        "src": "598:51:19",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/IEuclidRandomizer.sol",
+        "file": "./IEuclidRandomizer.sol",
+        "id": 5160,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 5171,
+        "sourceUnit": 5243,
+        "src": "650:33:19",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IEuclidFormula",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5170,
+        "linearizedBaseContracts": [
+          5170
+        ],
+        "name": "IEuclidFormula",
+        "nameLocation": "695:14:19",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "9e36c585",
+            "id": 5169,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "generateFormula",
+            "nameLocation": "722:15:19",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5165,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5162,
+                  "mutability": "mutable",
+                  "name": "hash",
+                  "nameLocation": "746:4:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5169,
+                  "src": "738:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 5161,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "738:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5164,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "760:7:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5169,
+                  "src": "752:15:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5163,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "752:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "737:31:19"
+            },
+            "returnParameters": {
+              "id": 5168,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5167,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5169,
+                  "src": "792:13:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5166,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "792:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "791:15:19"
+            },
+            "scope": 5170,
+            "src": "713:94:19",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5171,
+        "src": "685:124:19",
+        "usedErrors": []
+      }
+    ],
+    "src": "574:236:19"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-06-30T01:30:53.876Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

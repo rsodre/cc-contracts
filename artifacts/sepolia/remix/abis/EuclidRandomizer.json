@@ -1,0 +1,247 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "self",
+				"type": "tuple"
+			},
+			{
+				"internalType": "uint32",
+				"name": "maxExclusive",
+				"type": "uint32"
+			}
+		],
+		"name": "getInt",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "self",
+				"type": "tuple"
+			},
+			{
+				"internalType": "uint32",
+				"name": "minInclusive",
+				"type": "uint32"
+			},
+			{
+				"internalType": "uint32",
+				"name": "maxExclusive",
+				"type": "uint32"
+			}
+		],
+		"name": "getIntRange",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "self",
+				"type": "tuple"
+			}
+		],
+		"name": "getNextValue",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint128",
+				"name": "seed",
+				"type": "uint128"
+			}
+		],
+		"name": "initialize",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes16",
+				"name": "seed",
+				"type": "bytes16"
+			}
+		],
+		"name": "initialize",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32[4]",
+						"name": "state",
+						"type": "uint32[4]"
+					},
+					{
+						"internalType": "uint32",
+						"name": "value",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IEuclidRandomizer.RandomizerState",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "contractAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "senderAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "blockNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "makeSeed",
+		"outputs": [
+			{
+				"internalType": "uint128",
+				"name": "",
+				"type": "uint128"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

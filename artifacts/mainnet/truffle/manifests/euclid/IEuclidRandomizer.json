@@ -1,0 +1,1126 @@
+{
+  "contractName": "IEuclidRandomizer",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "senderAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "makeSeed",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "seed",
+          "type": "uint128"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes16",
+          "name": "seed",
+          "type": "bytes16"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "self",
+          "type": "tuple"
+        }
+      ],
+      "name": "getNextValue",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "self",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint32",
+          "name": "maxExclusive",
+          "type": "uint32"
+        }
+      ],
+      "name": "getInt",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "self",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint32",
+          "name": "minInclusive",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "maxExclusive",
+          "type": "uint32"
+        }
+      ],
+      "name": "getIntRange",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32[4]",
+              "name": "state",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "value",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IEuclidRandomizer.RandomizerState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"self\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"maxExclusive\",\"type\":\"uint32\"}],\"name\":\"getInt\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"self\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"minInclusive\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maxExclusive\",\"type\":\"uint32\"}],\"name\":\"getIntRange\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"self\",\"type\":\"tuple\"}],\"name\":\"getNextValue\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint128\",\"name\":\"seed\",\"type\":\"uint128\"}],\"name\":\"initialize\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes16\",\"name\":\"seed\",\"type\":\"bytes16\"}],\"name\":\"initialize\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32[4]\",\"name\":\"state\",\"type\":\"uint32[4]\"},{\"internalType\":\"uint32\",\"name\":\"value\",\"type\":\"uint32\"}],\"internalType\":\"struct IEuclidRandomizer.RandomizerState\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"senderAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"blockNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenNumber\",\"type\":\"uint256\"}],\"name\":\"makeSeed\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IEuclidRandomizer.sol\":\"IEuclidRandomizer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IEuclidRandomizer.sol\":{\"keccak256\":\"0x03aebf7877016b2a4084c2f85e621ee16814b4ac6990a7ce0fd3f71e7d762ef1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ddff86b70e3e09f1ca15ce5c3318941022ee8dec32d2af3d466789d395bb1ff\",\"dweb:/ipfs/QmPTmgp2cCXPfueE8LTLDs31tTXyY51fZfP1Veji8grWAa\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n//\n//  ********  **     **    ******   **        **  *******  \n// /**/////  /**    /**   **////** /**       /** /**////** \n// /**       /**    /**  **    //  /**       /** /**    /**\n// /*******  /**    /** /**        /**       /** /**    /**\n// /**////   /**    /** /**        /**       /** /**    /**\n// /**       /**    /** //**    ** /**       /** /**    ** \n// /******** //*******   //******  /******** /** /*******  \n// ////////   ///////     //////   ////////  //  ///////   \n//\n// by collect-code 2022\n// https://collect-code.com/\n//\npragma solidity ^0.8.2;\n\ninterface IEuclidRandomizer {\n\n\tstruct RandomizerState {\n\t\tuint32[4] state;\n\t\tuint32 value;\n\t}\n\n\tfunction makeSeed(address contractAddress, address senderAddress, uint blockNumber, uint256 tokenNumber) external view returns (uint128) ;\n\tfunction initialize(uint128 seed) external pure returns (RandomizerState memory);\n\tfunction initialize(bytes16 seed) external pure returns (RandomizerState memory);\n\tfunction getNextValue(RandomizerState memory self) external pure returns (RandomizerState memory);\n\tfunction getInt(RandomizerState memory self, uint32 maxExclusive) external pure returns (RandomizerState memory);\n\tfunction getIntRange(RandomizerState memory self, uint32 minInclusive, uint32 maxExclusive) external pure returns (RandomizerState memory);\n}\n",
+  "sourcePath": "/Users/roger/Dev/Blockchain/Truffle/cc-euclid/contracts/IEuclidRandomizer.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IEuclidRandomizer.sol",
+    "exportedSymbols": {
+      "IEuclidRandomizer": [
+        5242
+      ]
+    },
+    "id": 5243,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5172,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "574:23:20"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IEuclidRandomizer",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5242,
+        "linearizedBaseContracts": [
+          5242
+        ],
+        "name": "IEuclidRandomizer",
+        "nameLocation": "609:17:20",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IEuclidRandomizer.RandomizerState",
+            "id": 5179,
+            "members": [
+              {
+                "constant": false,
+                "id": 5176,
+                "mutability": "mutable",
+                "name": "state",
+                "nameLocation": "668:5:20",
+                "nodeType": "VariableDeclaration",
+                "scope": 5179,
+                "src": "658:15:20",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint32_$4_storage_ptr",
+                  "typeString": "uint32[4]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 5173,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "id": 5175,
+                  "length": {
+                    "hexValue": "34",
+                    "id": 5174,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "665:1:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_4_by_1",
+                      "typeString": "int_const 4"
+                    },
+                    "value": "4"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "658:9:20",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$4_storage_ptr",
+                    "typeString": "uint32[4]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5178,
+                "mutability": "mutable",
+                "name": "value",
+                "nameLocation": "684:5:20",
+                "nodeType": "VariableDeclaration",
+                "scope": 5179,
+                "src": "677:12:20",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 5177,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "677:6:20",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "RandomizerState",
+            "nameLocation": "638:15:20",
+            "nodeType": "StructDefinition",
+            "scope": 5242,
+            "src": "631:62:20",
+            "visibility": "public"
+          },
+          {
+            "functionSelector": "f192d0e7",
+            "id": 5192,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "makeSeed",
+            "nameLocation": "705:8:20",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5181,
+                  "mutability": "mutable",
+                  "name": "contractAddress",
+                  "nameLocation": "722:15:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5192,
+                  "src": "714:23:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5180,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "714:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5183,
+                  "mutability": "mutable",
+                  "name": "senderAddress",
+                  "nameLocation": "747:13:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5192,
+                  "src": "739:21:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5182,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "739:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5185,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "767:11:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5192,
+                  "src": "762:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5184,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "762:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5187,
+                  "mutability": "mutable",
+                  "name": "tokenNumber",
+                  "nameLocation": "788:11:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5192,
+                  "src": "780:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5186,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "780:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "713:87:20"
+            },
+            "returnParameters": {
+              "id": 5191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5190,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5192,
+                  "src": "824:7:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 5189,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "824:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "823:9:20"
+            },
+            "scope": 5242,
+            "src": "696:138:20",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "56db9ef1",
+            "id": 5200,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "845:10:20",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5194,
+                  "mutability": "mutable",
+                  "name": "seed",
+                  "nameLocation": "864:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5200,
+                  "src": "856:12:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 5193,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "856:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "855:14:20"
+            },
+            "returnParameters": {
+              "id": 5199,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5198,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5200,
+                  "src": "893:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5197,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5196,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "893:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "893:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "892:24:20"
+            },
+            "scope": 5242,
+            "src": "836:81:20",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "bd33d1e3",
+            "id": 5208,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "928:10:20",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5203,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5202,
+                  "mutability": "mutable",
+                  "name": "seed",
+                  "nameLocation": "947:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5208,
+                  "src": "939:12:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes16",
+                    "typeString": "bytes16"
+                  },
+                  "typeName": {
+                    "id": 5201,
+                    "name": "bytes16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "939:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes16",
+                      "typeString": "bytes16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "938:14:20"
+            },
+            "returnParameters": {
+              "id": 5207,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5206,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5208,
+                  "src": "976:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5205,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5204,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "976:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "976:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "975:24:20"
+            },
+            "scope": 5242,
+            "src": "919:81:20",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "be1cfcc4",
+            "id": 5217,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNextValue",
+            "nameLocation": "1011:12:20",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5211,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nameLocation": "1047:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5217,
+                  "src": "1024:27:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5210,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5209,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "1024:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "1024:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1023:29:20"
+            },
+            "returnParameters": {
+              "id": 5216,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5215,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5217,
+                  "src": "1076:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5214,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5213,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "1076:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "1076:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1075:24:20"
+            },
+            "scope": 5242,
+            "src": "1002:98:20",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "591e5735",
+            "id": 5228,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getInt",
+            "nameLocation": "1111:6:20",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5223,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5220,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nameLocation": "1141:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5228,
+                  "src": "1118:27:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5219,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5218,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "1118:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "1118:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5222,
+                  "mutability": "mutable",
+                  "name": "maxExclusive",
+                  "nameLocation": "1154:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5228,
+                  "src": "1147:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 5221,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1147:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1117:50:20"
+            },
+            "returnParameters": {
+              "id": 5227,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5226,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5228,
+                  "src": "1191:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5225,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5224,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "1191:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "1191:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1190:24:20"
+            },
+            "scope": 5242,
+            "src": "1102:113:20",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "290f1050",
+            "id": 5241,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getIntRange",
+            "nameLocation": "1226:11:20",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5236,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5231,
+                  "mutability": "mutable",
+                  "name": "self",
+                  "nameLocation": "1261:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5241,
+                  "src": "1238:27:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5230,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5229,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "1238:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "1238:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5233,
+                  "mutability": "mutable",
+                  "name": "minInclusive",
+                  "nameLocation": "1274:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5241,
+                  "src": "1267:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 5232,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1267:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5235,
+                  "mutability": "mutable",
+                  "name": "maxExclusive",
+                  "nameLocation": "1295:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5241,
+                  "src": "1288:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 5234,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1288:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1237:71:20"
+            },
+            "returnParameters": {
+              "id": 5240,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5239,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5241,
+                  "src": "1332:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomizerState_$5179_memory_ptr",
+                    "typeString": "struct IEuclidRandomizer.RandomizerState"
+                  },
+                  "typeName": {
+                    "id": 5238,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5237,
+                      "name": "RandomizerState",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5179,
+                      "src": "1332:15:20"
+                    },
+                    "referencedDeclaration": 5179,
+                    "src": "1332:15:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomizerState_$5179_storage_ptr",
+                      "typeString": "struct IEuclidRandomizer.RandomizerState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1331:24:20"
+            },
+            "scope": 5242,
+            "src": "1217:139:20",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5243,
+        "src": "599:759:20",
+        "usedErrors": []
+      }
+    ],
+    "src": "574:785:20"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-06-30T01:30:53.878Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
